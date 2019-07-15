@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button android:layout_width="wrap_content"
+            android:text="Click me"
+            android:id="@+id/btn_click_me"
+            android:textAllCaps="false"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+    <View android:layout_width="112dp"
+          android:id="@+id/v_1"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_height="112dp"
+          android:background="@color/colorPrimary"/>
+
+    <View android:layout_width="212dp"
+          android:id="@+id/v_2"
+          android:layout_above="@+id/v_1"
+          android:layout_height="212dp"
+          android:background="@color/colorAccent"/>
+
+    <TextView
+            android:textSize="32sp"
+            android:layout_alignBottom="@+id/v_2"
+            android:id="@+id/tv_hello_java"
+            android:layout_toRightOf="@+id/v_2"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Hello java"/>
+
+    <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:text="B1"
+                android:background="@color/colorAccent"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="B2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="B3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
